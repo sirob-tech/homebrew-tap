@@ -5,21 +5,21 @@
 class Bmcp < Formula
   desc "BORIS MCP to CLI converter"
   homepage "https://github.com/sirob-tech/boris-mcp-cli"
-  version "0.8.0"
+  version "0.8.1"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/sirob-tech/boris-mcp-cli/releases/download/v0.8.0/bmcp-darwin-amd64.tar.gz"
-      sha256 "9470fedd1afbf5ede0180e550e07bdee3c3844293f9a6088f50ca76657e9abcd"
+      url "https://github.com/sirob-tech/boris-mcp-cli/releases/download/v0.8.1/bmcp-darwin-amd64.tar.gz"
+      sha256 "e4f30843e454ccaebc5b64569a73938019a0966b24cad9ac2ee4d71ee325f585"
 
       define_method(:install) do
         bin.install "bmcp"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/sirob-tech/boris-mcp-cli/releases/download/v0.8.0/bmcp-darwin-arm64.tar.gz"
-      sha256 "d97801203ead163fbbba66e0c669cbb4c1c6bc4d47dfe4dd519bcfc83ea4c479"
+      url "https://github.com/sirob-tech/boris-mcp-cli/releases/download/v0.8.1/bmcp-darwin-arm64.tar.gz"
+      sha256 "4fa0be2a34ca4a2df894c5f8f5f3b8e163d2b7fcd97fe40dacb47ae89de56a4c"
 
       define_method(:install) do
         bin.install "bmcp"
@@ -29,15 +29,15 @@ class Bmcp < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/sirob-tech/boris-mcp-cli/releases/download/v0.8.0/bmcp-linux-amd64.tar.gz"
-      sha256 "edd31f86cb8ba7dee90e16541e735f0c266a52295044b0efe2b9180ed5e4d753"
+      url "https://github.com/sirob-tech/boris-mcp-cli/releases/download/v0.8.1/bmcp-linux-amd64.tar.gz"
+      sha256 "effb9a1a94fffc692cae6edfafb3fe1ed39a580c10e62e5eab74c6eb58aa5851"
       define_method(:install) do
         bin.install "bmcp"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/sirob-tech/boris-mcp-cli/releases/download/v0.8.0/bmcp-linux-arm64.tar.gz"
-      sha256 "8b92b0fa53038bc7d6eff72faadaf1fe539b23a3f76f078e6feff53e9c50eebc"
+      url "https://github.com/sirob-tech/boris-mcp-cli/releases/download/v0.8.1/bmcp-linux-arm64.tar.gz"
+      sha256 "d793db01ce0e35d7ef2f833c69a0d8f94484df3b42f543f35f3445f090b05945"
       define_method(:install) do
         bin.install "bmcp"
       end
